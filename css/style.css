@@ -1,0 +1,69 @@
+@import url('reset.css');
+body {
+    font-size: 16px; 
+    min-width: 360px;
+}
+.section{
+    padding: 30px;
+}
+
+.section .section-content{
+    border: 1px solid lightgrey;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 0.2em 1em 3em 1em;
+    position: relative;
+}
+
+.section .section-content .btn-show-next{
+    border: none;
+    content: '';
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    bottom: -31px;
+    left: calc(50% - 31px);
+    background-color: #fff;
+    cursor: pointer;
+} 
+.section .section-content .btn-show-next>span{
+    display: none;
+} 
+
+.section .section-content .btn-show-next:before{
+    border: 1px solid lightgrey;
+    color: lightgray;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-size: 4em;
+    font-weight: lighter;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 5px;
+} 
+.section .section-content .btn-show-next:hover:before{
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
+.section .section-title{
+    background: #fff;
+    color: lightgrey;
+    display: inline-block;
+    font-size: 2em;
+    margin-top: -0.7em;
+    padding: 0.2em 1em;
+}
+
+.photo img{
+    width: 200px;
+    border-radius: 50%;
+    
+}
