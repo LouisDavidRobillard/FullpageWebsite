@@ -6,6 +6,54 @@ body {
     min-width: 360px;
 }
 
+
+#fullpage-menu{
+    position: fixed;
+    right: 0;
+    top:50%;
+    z-index: 100;
+}
+
+#fullpage-menu li{
+    text-align: right;
+    height: 30px;
+}
+
+#fullpage-menu li button{
+    text-align: left;    
+    overflow: hidden;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    max-height: 10px;
+    max-width: 10px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+#fullpage-menu li button>span{
+    padding-left: 10px; 
+    transition: all 0.5s ease-in-out;
+}
+#fullpage-menu li.active button{
+    max-height: 26px;
+    margin: 2px 5px;
+}
+#fullpage-menu li:hover button{
+    max-height: 100px;
+    max-width: 100px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+#fullpage-menu li:hover button>span{
+    padding-left: 0; 
+    transition: all 0.5s ease-in-out;
+}
+
+
 .section{
     padding: 30px;
 }
@@ -133,7 +181,7 @@ body {
 #contact p{
     padding: 5px;
 }
-#contact .linkedin-link > span::before{
+#contact .linkedin-link::before{
     content: "\f08c";
     font-family: 'FontAwesome';
     font-size: 1em;

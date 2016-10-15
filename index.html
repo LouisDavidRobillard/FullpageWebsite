@@ -4,7 +4,7 @@
 <head>
 	<title>FullPage Website</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.min.css"
 	/>
 
@@ -14,17 +14,36 @@
 </head>
 
 <body>
+	<div id="fullpage-menu">
+		<ul>
+			<li data-menuanchor="section1">
+				<button onclick="$.fn.fullpage.moveTo(1);"><span>Profil</span></button>
+			</li>
+			<li data-menuanchor="section2">
+				<button onclick="$.fn.fullpage.moveTo(2);"><span>Compétences</span></button>
+			</li>
+			<li data-menuanchor="section3">
+				<button onclick="$.fn.fullpage.moveTo(3);"><span>Expériences</span></button>
+			</li>
+			<li data-menuanchor="section4">
+				<button onclick="$.fn.fullpage.moveTo(4);"><span>Formations</span></button>
+			</li>
+			<li data-menuanchor="section5">
+				<button onclick="$.fn.fullpage.moveTo(5);"><span>contact</span></button>
+			</li>
+		</ul>
+	</div>
 	<div id="fullpage">
-		<div class="section">
+		<div class="section" id="profile" data-anchor="section1">
 			<div class="section-content">
-				<h3 class="section-title">Louis-David Robillard</h2>
-					<div class="photo">
-						<img src="img/profile-picture.jpg" alt="Photo de profil">
-					</div>
-					<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
+				<h3 class="section-title">Louis-David Robillard</h3>
+				<div class="photo">
+					<img src="img/profile-picture.jpg" alt="Photo de profil">
+				</div>
+				<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
 			</div>
 		</div>
-		<div class="section" id="competences">
+		<div class="section" id="competences" data-anchor="section2">
 			<div class="section-content">
 				<h3 class="section-title">Compétences informatiques</h3>
 				<ul class="simple-list">
@@ -72,10 +91,10 @@
 						</ul>
 					</li>
 				</ul>
-				<button class="btn-show-next"  onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
+				<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
 			</div>
 		</div>
-		<div class="section" id="experiences">
+		<div class="section" id="experiences" data-anchor="section3">
 			<div class="section-content">
 				<h3 class="section-title" v>Expériences professionnelles</h3>
 				<ul>
@@ -103,10 +122,10 @@
 						<p class="duration">2014 - 2015</p>
 					</li>
 				</ul>
-				<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>                
+				<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
 			</div>
 		</div>
-		<div class="section" id="scholarship">
+		<div class="section" id="scholarship" data-anchor="section4">
 			<div class="section-content">
 				<h3 class="section-title">Formations</h3>
 				<ul>
@@ -124,7 +143,7 @@
 				<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
 			</div>
 		</div>
-		<div class="section" id="contact">
+		<div class="section" id="contact" data-anchor="section5">
 			<div class="section-content">
 				<h3 class="section-title">Pour me rejoindre</h3>
 				<div>

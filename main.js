@@ -1,3 +1,6 @@
 $(document).ready(function(){
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+        menu: '#fullpage-menu',
+        recordHistory: false
+    });
 });
