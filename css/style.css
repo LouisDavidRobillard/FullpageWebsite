@@ -1,8 +1,11 @@
 @import url('reset.css');
+@import url('button.css');
 body {
     font-size: 16px; 
+    font-family: 'Roboto';
     min-width: 360px;
 }
+
 .section{
     padding: 30px;
 }
@@ -66,4 +69,80 @@ body {
     width: 200px;
     border-radius: 50%;
     
+}
+
+/* Competences */
+#competences{
+}
+#competences .simple-list >li{
+    margin-bottom: 10px;
+}
+#competences .simple-list >li>p{
+    font-weight: 600;
+}
+#competences .float-list{
+    margin: 0 auto;
+
+}
+#competences .float-list > li{
+    display: inline-block;
+    padding: 4px;
+    margin: 0 2px;
+    border: 1px solid lightgrey;
+}
+
+/* Experiences */
+#experiences{
+}
+#experiences .job + .job{
+    margin-top: 20px;
+}
+
+#experiences .job .title,
+#experiences .job .employer{
+    display: inline-block
+}
+
+#experiences .job .title {
+    font-weight: 600;
+}
+
+#experiences .job .title::after {
+    content: ' - ';
+    display: inline;
+}
+
+#experiences .job .description {
+    text-align: justify;
+    color: #444;
+}
+/* Scholarship */ 
+#scholarship{
+} 
+#scholarship .school + .school{
+    margin-top: 20px;
+}
+#scholarship .school .course{
+    font-weight: 600;
+}
+
+
+/* Contact */
+#contact{
+}
+#contact p{
+    padding: 5px;
+}
+#contact .linkedin-link > span::before{
+    content: "\f08c";
+    font-family: 'FontAwesome';
+    font-size: 1em;
+    display: inline;
+    text-decoration: none;
+    color: #0077b5
+}
+
+.back-to-top{
+    margin: 0 auto;
+    margin-top: 100px;
 }

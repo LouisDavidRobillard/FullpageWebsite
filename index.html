@@ -4,6 +4,7 @@
 <head>
 	<title>FullPage Website</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.7/jquery.fullPage.min.css"
 	/>
 
@@ -23,13 +24,13 @@
 					<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
 			</div>
 		</div>
-		<div class="section">
+		<div class="section" id="competences">
 			<div class="section-content">
 				<h3 class="section-title">Compétences informatiques</h3>
 				<ul class="simple-list">
 					<li>
 						<p>Langages connus</p>
-						<ul>
+						<ul class="float-list">
 							<li>Javascript</li>
 							<li>C#</li>
 							<li>HTML5</li>
@@ -40,7 +41,7 @@
 					</li>
 					<li>
 						<p>Frameworks connus</p>
-						<ul>
+						<ul class="float-list">
 							<li>AngularJS</li>
 							<li>JQuery</li>
 							<li>ASP.NET MVC</li>
@@ -49,7 +50,7 @@
 					</li>
 					<li>
 						<p>Microsoft Azure</p>
-						<ul>
+						<ul class="float-list">
 							<li>Web app</li>
 							<li>API app</li>
 							<li>Application Insights</li>
@@ -60,11 +61,13 @@
 					</li>
 					<li>
 						<p>Environnements de travail</p>
-						<ul>
+						<ul class="float-list">
 							<li>Visual Studio</li>
 							<li>VS Code</li>
 							<li>SQL Management Studio</li>
 							<li>TFS</li>
+							<li>GitHub</li>
+							<li>NodeJS</li>
 							<li>Eclipse</li>
 						</ul>
 					</li>
@@ -72,7 +75,7 @@
 				<button class="btn-show-next"  onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
 			</div>
 		</div>
-		<div class="section">
+		<div class="section" id="experiences">
 			<div class="section-content">
 				<h3 class="section-title" v>Expériences professionnelles</h3>
 				<ul>
@@ -103,7 +106,7 @@
 				<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>                
 			</div>
 		</div>
-		<div class="section">
+		<div class="section" id="scholarship">
 			<div class="section-content">
 				<h3 class="section-title">Formations</h3>
 				<ul>
@@ -121,14 +124,16 @@
 				<button class="btn-show-next" onclick="$.fn.fullpage.moveSectionDown();"><span>Suivant</span></button>
 			</div>
 		</div>
-		<div class="section">
+		<div class="section" id="contact">
 			<div class="section-content">
 				<h3 class="section-title">Pour me rejoindre</h3>
 				<div>
-					<p><a href="mailto:louis-david2@hotmail.com">louis-david2@hotmail.com</a></p>
+					<p><a class="btn link " href="mailto:louis-david2@hotmail.com"><span>louis-david2@hotmail.com</span></a></p>
 					<p>438-395-5766</p>
+					<p><a class="btn link linkedin-link" href="https://ca.linkedin.com/in/louis-david-robillard-6436bb126" target="_blanck"><span>Profil LinkedIn</span></a></p>
 				</div>
 			</div>
+			<button class="btn link back-to-top" onclick="$.fn.fullpage.moveTo(1);">Retour au début</button>
 		</div>
 	</div>
 
